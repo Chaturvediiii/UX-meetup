@@ -8,13 +8,14 @@
 
 /* sponsars start */
 .sponsars-heading {
-  width: 43%;
-  margin-bottom: 2rem;
+
+  padding: 2rem 5rem;
+ 
 }
 
 .sponsars-heading h1 {
-  border-bottom: 2px solid #f4b400;
   text-transform: capitalize;
+
 }
 
 .sponsers {
@@ -35,31 +36,24 @@
 }
 
 .col {
-  padding: 1rem 5rem;
+  padding: 2rem 5rem;
 }
 
 .col img {
   width: 100%;
 }
-
-@media (max-width: 768px) {
-  .row1 {
-    display: block;
-  }
-  .col {
-    width: 100%;
-  }
-}
 /* sponsars end */
 
 /* community start */
 .community-heading {
-  width: 35%;
-  margin-bottom: 2rem;
+  
+  padding: 2rem 5rem;
 }
 
 .community-heading h1 {
-  border-bottom: 2px solid #f4b400;
+  text-transform: capitalize;
+  text-align: left;
+
 }
 
 .community {
@@ -73,7 +67,7 @@
   justify-content: space-between;
   width: 100%;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 2rem 5rem;
 }
 
 .col-community {
@@ -86,11 +80,11 @@
 }
 
 .col-community h4 {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .col-community p {
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 .col-community img {
@@ -113,19 +107,6 @@ width: 50%;
   justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .row-community {
-    display: block;
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .col-community {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-}
 /* community end */
 
 /* meetup start */
@@ -136,11 +117,12 @@ width: 50%;
   flex-direction: column;
 }
 .heading {
-  width: 25%;
+
+  padding: 2rem 5rem;
 }
 
 .heading h1 {
-  border-bottom: 2px solid #f4b400;
+
   text-transform: capitalize;
 }
 
@@ -181,9 +163,39 @@ width: 50%;
 }
 
 @media (max-width: 768px) {
+.sponsars-heading , .community-heading, .heading{
+  padding: 0rem;
+}
+
+.sponsars-heading h1 , .community-heading h1, .heading h1{
+  padding: 0rem;
+  font-size: 1.35rem;
+}
+
+  .row1 {
+    display: block;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .row-community {
+    display: block;
+    padding: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .col-community {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
   .heading {
     width: 65%;
   }
+
   .content {
     display: flex;
     flex-direction: column;
