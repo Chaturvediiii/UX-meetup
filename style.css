@@ -1,211 +1,213 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap');
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   padding: 1rem 2.5rem;
-    color: black;
-  }
-  
-  .brand-title {
-    font-size: 1.5rem;
-  
-  }
-  
-  .navbar-links ul {
+/* sponsars start */
+.sponsars-heading {
+  width: 43%;
+  margin-bottom: 2rem;
+}
 
+.sponsars-heading h1 {
+  border-bottom: 2px solid #f4b400;
+  text-transform: capitalize;
+}
 
-padding: 1rem;
-    display: flex;
-   
-  }
-  
-  .navbar-links li {
-    list-style: none;
-  }
-  
-  .navbar-links li:hover {
-   /* border: 1px dotted black; */
-  }
+.sponsers {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
 
-  #clr{
-    color: black;
-    padding-right: 0.5rem;
-  }
-  
-  .navbar-links li a {
-    text-decoration: none;
-    color: black;
-    padding: 1rem;
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.row1 {
+  display: flex;
+  justify-content: center;
+}
+
+.col {
+  padding: 1rem 5rem;
+}
+
+.col img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .row1 {
     display: block;
   }
-  
-  .toggle-button {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 28px;
-    height: 21px;
-  }
-  
-  .toggle-button .bar {
-    height: 3px;
+  .col {
     width: 100%;
-    background-color: black;
-    border-radius: 10px;
   }
+}
+/* sponsars end */
 
-  .btn{
-    background-color: white;
-   color: black;
-
-  }
-  
-  .btn:hover{
-    /* border: 1px dotted black;
-    color: black; */
-  }
-  @media (max-width: 768px) {
-    .btn {
-      width: 100%;
-    }
-    .toggle-button {
-      display: flex;
-    }
-  
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .navbar-links {
-      display: none;
-      width: 100%;
-    }
-  
-    .navbar-links ul {
-      width: 100%;
-      flex-direction: column;
-    }
-  
-    .navbar-links li {
-      text-align: center;
-    }
-  
-    .navbar-links li a {
-      padding: 0.5rem 1rem;
-    }
-  
-    .navbar-links.active {
-      display: flex;
-    }
-  }
-  
-  /* meetup start */
-  .meet-container{
-    width: 100%;
-    padding: 2rem;
-    display: flex;
-flex-direction: column;
-  }
-
-  .heading{
-    /* background-color: #af2a2a; */
-    width: 23%;
-    
-  }
-
-  .heading h1{
-border-bottom: 2px solid #F4B400;
-  }
-
-  .meet-container h1{
-    /* width: 100%; */
-  }
-
-  .content{
-  
-    display: flex;
-    justify-content: space-between;
-       /* padding: 2rem; */
-  }
-
-  .map{
-    width: 50%;
-    /* background-color: #742020; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-
-.btn{
-  padding:0.5rem 1rem;
-  background-color: #4285F4;
-  color: white;
-  
+/* community start */
+.community-heading {
+  width: 35%;
+  margin-bottom: 2rem;
 }
 
-  .location{
-    width: 50%;
-    /* background-color: #3095d8; */
+.community-heading h1 {
+  border-bottom: 2px solid #f4b400;
+}
+
+.community {
+  display: block;
+  padding: 3rem;
+  width: 100%;
+}
+
+.row-community {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.col-community {
+  width: 30%;
+
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.col-community h4 {
+  font-size: 1.25rem;
+}
+
+.col-community p {
+  font-size: 1rem;
+}
+
+.col-community img {
+  width: 70%;
+}
+
+.cork img{
+width: 50%;
+  padding: 1rem 2rem;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.last-col{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .row-community {
+    display: block;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .col-community {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+/* community end */
+
+/* meetup start */
+.meet-container {
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  width: 25%;
+}
+
+.heading h1 {
+  border-bottom: 2px solid #f4b400;
+  text-transform: capitalize;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.map {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: #4285f4;
+  color: white;
+}
+
+.location {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+}
+
+.location h2 {
+  font-size: 1.85rem;
+  font-weight: bold;
+}
+
+.location p {
+  width: 80%;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    width: 65%;
+  }
+  .content {
     display: flex;
     flex-direction: column;
-    
-  
- margin-top: 7rem;
-
   }
 
-  .location h2{
-    font-size: 1.85rem;
-    font-weight: bold;
+  .map {
+    width: 100%;
   }
 
-  .location p{
-    width: 80%;
-    /* background-color: #fff; */
-    font-size: 1.25rem;
+  .location {
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
     margin-top: 1rem;
   }
 
-  @media (max-width:768px){
-    .heading {
-      width: 65%;
-    }
-    .content{
-      display: flex;
-      flex-direction: column;
-    
-    }
-
-    .map {
-      width: 100%;
-    }
-
-    .location{
-      padding: 2rem;
-      width: 100%;
-      text-align: center;
-      margin-top: 1rem;
-    }
-
-    .location p{
-      width: 100%;
-     
-    }
-
+  .location p {
+    width: 100%;
   }
+}
+/* meetup end */
 
 
-  /* meetup end */
+
+
+
+
